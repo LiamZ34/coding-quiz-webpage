@@ -2,17 +2,26 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: darkgrey;
 }
+.start-btn,
+.quiz-box {
 
-.front-page {
-    margin-top: 200px;
+}
+.front-page,
+#quiz-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin-top: 200px;
     font-size: 35px;
     text-align: center;
+*/
 }
-header {
+/* header {
     display: flex;
     justify-content: space-between;
-}
-header p {
+} */
+/* header p {
     margin-right: 50px;
     font-size: 20px;
     color: black;
@@ -23,8 +32,7 @@ header h1 {
     color: red;
     cursor: pointer;
     font-weight: 400;
-}
-
+} */
 h1 {
     font-size: 35px;
     font-weight: 900;
@@ -33,6 +41,7 @@ h1 {
     font-size: 15px;
     font-weight: 600;
     font-style: italic;
+    margin-left: 70px;
 }
 .start-btn button{
     background: red;
@@ -40,6 +49,7 @@ h1 {
     padding: 10px;
     border-radius: 20px;
     cursor: pointer;
+    margin-left: 220px;
 }
 .start-btn button:hover {
     transition: .4s;
@@ -48,3 +58,16 @@ h1 {
     transform: scale(1.2);
     box-shadow: 0px 0px 5px black, 0px 0px 15px black;
 }
+#quiz-box{
+    /* display: flex; */
+    /* width: 550px; */
+    background-color: #fff;
+    border-radius: 5px;
+    height: 100%;
+}
+/* #quiz-box  div,section,span,p,button,footer,header{ 
+    background-color: white;
+    border-radius: 5px;
+} */
+
+ 
