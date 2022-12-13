@@ -1,15 +1,23 @@
 var questions = [
-    { title: 'css styles',
-      options: [ 'option 1', 'option 2', 'option 3', 'option 4'],
-      correct: 'option 2'
+    { title: 'What is considered to be the most popular programming language in the world?',
+      options: [ 'JavaScript', 'HTML', 'Swift', 'Ruby'],
+      correct: 'JavaScript'
     },
-    { title: 'javascript ',
-      options: [ 'option 1', 'option 2', 'option 3', 'option 4'],
-      correct: 'option 2'
+    { title: 'In CSS and HTML colors are displayed by combining these three shades of light',
+      options: [ 'Red, Green, and Blue', 'Red, Beige, and Purple', 'Blue, Black, and Pink', 'Red, Brown, and Yellow'],
+      correct: 'Red, Green, and Blue'
     },
-    { title: 'html',
-      options: [ 'option 1', 'option 2', 'option 3', 'option 4'],
-      correct: 'option 2'
+    { title: 'What tag is used to define an unordered list that is bulleted?',
+      options: [ '<s>', '<li>', '<ul>', '<a>'],
+      correct: '<ul>'
+    },
+    { title: 'In JavaScript, what is a block of code called that is used to perform a specific task?',
+      options: [ 'Function', 'Declaration', 'Variable', 'String'],
+      correct: 'Function'
+    },
+    { title: 'In JavaScript, what element is used to store multiple values in a single variable?',
+      options: [ 'Strings', 'Variables', 'Functions', 'Arrays'],
+      correct: 'Arrays'
     },
 ]
 var questionIndex;
@@ -32,7 +40,6 @@ function displayQuestion() {
        option.textContent = question.options[index]
        option.addEventListener("click", checkAnswer )
        document.getElementById('quiz-box').appendChild(option)
-        
     }
 }
 
