@@ -10,6 +10,23 @@
     transform: translate(-50%, -50%);
  
 }
+#timer-box {
+    width: 100%;
+    height: 30px;
+    margin: 15px auto;
+    position: relative;
+    text-align: center;
+}
+#count {
+    background: black;
+    color: white;
+    border-radius: 20px;
+}
+#clock {
+    background: black;
+    color: red;
+}
+
 #quiz-box { 
     width: 500px;
     height: 100%;

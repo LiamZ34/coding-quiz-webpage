@@ -1,3 +1,7 @@
+var timerId;
+var timer = document.getElementById("clock")
+let timerInterval;
+
 var questions = [
     { title: 'What is considered to be the most popular programming language in the world?',
       options: [ 'JavaScript', 'HTML', 'Swift', 'Ruby'],
@@ -26,6 +30,8 @@ function startQuiz() {
     questionIndex = 0;
     displayQuestion()
 
+    startTimer()
+
     document.getElementById('begin').style.display='none'
 }
 
@@ -41,6 +47,26 @@ function displayQuestion() {
        option.addEventListener("click", checkAnswer )
        document.getElementById('quiz-box').appendChild(option)
     }
+}
+
+startTimer = () => {
+    //this will clear am existing timer in case of restart
+    clearInterval(timerInterval);
+
+    //this will clear the variables 
+    let second = 0,
+        minute = 0,
+        hour = 0
+
+    timerInterval = setInterval(function () {
+        timer.innerHTML = 
+        (hour ? hour + ':' : '') + 
+        (minute < 10 ? '0' + minute : minute) +
+        ':' + 
+        (second <10 ? '0' + second : second);
+
+        
+    })
 }
 
 function checkAnswer() {
