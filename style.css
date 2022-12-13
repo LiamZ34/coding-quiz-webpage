@@ -2,21 +2,46 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: darkgrey;
 }
-.start-btn,
-.quiz-box {
 
-}
-.front-page,
-#quiz-box {
+.front-page {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* margin-top: 200px;
-    font-size: 35px;
-    text-align: center;
-*/
+ 
 }
+#quiz-box { 
+    width: 500px;
+    height: 100%;
+    margin: 100px auto;
+    position: relative;
+}
+#quiz-box h2 {
+    background: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+#begin button {
+    background: red;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 220px;
+    align-items: center;
+}
+#begin button:hover {
+    transition: .4s;
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 5px black, 0px 0px 15px black;
+}
+
+
 /* header {
     display: flex;
     justify-content: space-between;
@@ -58,13 +83,7 @@ h1 {
     transform: scale(1.2);
     box-shadow: 0px 0px 5px black, 0px 0px 15px black;
 }
-#quiz-box{
-    /* display: flex; */
-    /* width: 550px; */
-    background-color: #fff;
-    border-radius: 5px;
-    height: 100%;
-}
+
 /* #quiz-box  div,section,span,p,button,footer,header{ 
     background-color: white;
     border-radius: 5px;

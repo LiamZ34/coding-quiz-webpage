@@ -18,7 +18,7 @@ function startQuiz() {
     questionIndex = 0;
     displayQuestion()
 
-    document.getElementById('intro').style.display='none'
+    document.getElementById('begin').style.display='none'
 }
 
 function displayQuestion() {
@@ -46,4 +46,4 @@ function stopQuiz() {
     
 }
 
-document.getElementById("start-button").addEventListener("click", startQuiz)
+document.getElementById("begin").addEventListener("click", startQuiz);
